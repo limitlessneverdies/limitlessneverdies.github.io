@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bishowdeep Bhusal (LIMITLESS): builder, Kathmandu</title>
+<meta name="description" content="Bishowdeep Bhusal, aka LIMITLESS. 16, Class 11 science, Kathmandu. Offline payments, a reverse-engineered game engine, scam-proofing for migrant workers, and a homemade Tesla coil.">
+<meta name="theme-color" content="#efede6">
+<meta property="og:title" content="LIMITLESS: Bishowdeep Bhusal">
+<meta property="og:description" content="16. Kathmandu. I take things apart to see why they work, then build the version I wish existed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=JetBrains+Mono:wght@400;500&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <canvas class="loader__arc" id="loaderArc"></canvas>
+  <div class="loader__word"><span>LIMIT</span><span>LESS</span></div>
+  <div class="loader__foot">
+    <span class="mono">charging coil</span>
+    <span class="loader__count mono" id="loaderCount">000</span>
+  </div>
+</div>
+
+<div class="progress" id="progress"></div>
+<div class="cursor" id="cursor"><span class="cursor__label" id="cursorLabel"></span></div>
+
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top" data-scroll>LIMITLESS<sup>®</sup></a>
+  <nav class="nav__links">
+    <a href="#builds" data-scroll class="u-link">Builds</a>
+    <a href="#lab" data-scroll class="u-link">Lab</a>
+    <a href="#casefile" data-scroll class="u-link">Security</a>
+    <a href="#journey" data-scroll class="u-link">Journey</a>
+  </nav>
+  <a class="pill" href="#contact" data-scroll><span class="roll"><span>Let's build</span><span aria-hidden="true">Let's build</span></span></a>
+</header>
+
+<main id="main">
+
+<section class="hero" id="top">
+  <div class="hero__top">
+    <p>Bishowdeep Bhusal<br><span class="muted">Builder · Robotics · Software</span></p>
+    <p class="hero__dev deva">लिमिटलेस</p>
+    <p class="hero__time">Kathmandu, Nepal<br><span class="muted mono" id="clock">--:--:--</span> <span class="muted mono tiny">UTC+5:45</span></p>
+  </div>
+  <h1 class="hero__name" aria-label="Limitless never dies">
+    <span class="line"><span class="line__in">Limit<span class="hl"><span class="hl__bg"></span>less</span></span></span>
+    <span class="line line--right"><span class="line__in"><em>never</em> dies.</span></span>
+  </h1>
+  <div class="hero__bottom">
+    <p class="hero__intro reveal">16, Class 11 science. I build things people say shouldn't work. Like <span class="rot" id="rot"><span class="rot__in">payments with zero bars of signal</span></span>Then I make them work.</p>
+    <div class="hero__meta reveal mono">
+      <span>N 27.7172°</span><span>E 85.3240°</span><span class="blink">● building NexPay</span>
+    </div>
+    <a href="#about" data-scroll class="hero__scroll"><span class="mono">scroll</span><span class="hero__scroll-line"></span></a>
+  </div>
+</section>
+
+<section class="statement" id="about">
+  <div class="wrap">
+    <p class="label mono">00 / about</p>
+    <p class="statement__text" data-words>I take things apart to find out why they work: a game engine, a payment system, my own attention span. Then I build the version I wish existed. GPA is nice. The why behind everything is the part I actually care about.</p>
+    <dl class="numbers">
+      <div class="numbers__item"><dd><span data-count="5">0</span>+</dd><dt>hackathons, 1 win</dt></div>
+      <div class="numbers__item"><dd><span data-count="14">0</span></dd><dt>public repos, all mine</dt></div>
+      <div class="numbers__item"><dd><span data-count="3.90" data-dec="2">0</span></dd><dt>SEE GPA, scholarship holder</dt></div>
+      <div class="numbers__item"><dd>Rs&nbsp;<span data-count="9000">0</span></dd><dt>course I could buy for Rs 0. I reported it.</dt></div>
+    </dl>
+  </div>
+</section>
+
+<section class="marquee" aria-label="Where I've been">
+  <div class="marquee__track">
+    <div class="marquee__group">
+      <span>Prime College Hackathon</span><i>✦</i><span>KMC Robotics Club</span><i>✦</i><span>Quick Enterprises, SWE intern</span><i>✦</i><span>Padhai Mantra, bug report</span><i>✦</i><span>github/limitlessneverdies</span><i>✦</i>
+    </div>
+    <div class="marquee__group" aria-hidden="true">
+      <span>Prime College Hackathon</span><i>✦</i><span>KMC Robotics Club</span><i>✦</i><span>Quick Enterprises, SWE intern</span><i>✦</i><span>Padhai Mantra, bug report</span><i>✦</i><span>github/limitlessneverdies</span><i>✦</i>
+    </div>
+  </div>
+</section>
+
+<section class="builds" id="builds">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title">Builds</h2>
+      <p class="section-side reveal">Four I'd defend in front of anyone. Every one started with a problem I or someone near me actually had.</p>
+    </div>
+
+    <div class="stack">
+
+      <article class="card card--dark" data-cursor="NexPay">
+        <div class="card__inner">
+          <div class="card__text">
+            <div class="card__top mono"><span>01</span><span class="tag tag--live">Android · v0.3</span></div>
+            <h3>NexPay</h3>
+            <p class="card__lede">Money that moves without internet.</p>
+            <p class="card__body">Half of Nepal knows the feeling: you're at a tea shop in the hills, you want to pay, and there's no signal. NexPay signs one-time payment notes on your phone and passes them along by QR, Bluetooth, Wi-Fi Direct or NFC. The person you pay can even pass it on before going online. It settles once you're back on the network, and it can only be spent once.</p>
+            <dl class="card__facts">
+              <div><dt>Crypto</dt><dd>ECDSA P-256 signed notes</dd></div>
+              <div><dt>Transport</dt><dd>QR · BT · Wi-Fi Direct · NFC</dd></div>
+              <div><dt>Built</dt><dd>Protocol, app, ledger server, design</dd></div>
+              <div><dt>With</dt><dd>Jitesh Prakash Chaudhary</dd></div>
+            </dl>
+            <a class="u-link card__link" href="https://limitlessneverdies.github.io/paila-app/" target="_blank" rel="noopener">Open the live app ↗</a>
+          </div>
+          <div class="card__media card__media--phone">
+            <img src="assets/nexpay.webp" alt="Eight NexPay screens: onboarding, PIN, wallet balance, nearby people radar, amount entry and hold-to-pay confirm" width="637" height="682" loading="lazy">
+            <div class="pay" id="pay">
+              <div class="pay__bar mono"><span class="pay__sig"><i></i><i></i><i></i><i></i></span><span id="payNet">no signal · airplane mode</span></div>
+              <button class="pay__btn" id="payBtn" data-cursor="Hold"><span class="pay__fill" id="payFill"></span><span class="pay__txt" id="payTxt">Hold to pay Rs 250, offline</span></button>
+              <p class="pay__out mono" id="payOut">try it. there's no internet in this card.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card" data-cursor="Rakshak">
+        <div class="card__inner">
+          <div class="card__text">
+            <div class="card__top mono"><span>02</span><span class="tag">Hackathon build · Gemini</span></div>
+            <h3>Rakshak <span class="deva deva--sm">रक्षक</span></h3>
+            <p class="card__lede">Make the job prove itself.</p>
+            <p class="card__body">Lakhs of Nepalis leave for the Gulf every year. A lot of them get promised one thing on a voice note, then handed a contract that says something else, in a language they can't read. Rakshak takes the voice notes, chats, ads, contracts, receipts and visas and checks what was <em>promised</em> against what's actually on <em>paper</em>. You get one answer, read out loud in Nepali: STOP, CHECK, or MATCH.</p>
+            <dl class="card__facts">
+              <div><dt>Reads</dt><dd>Voice · photo · PDF · video</dd></div>
+              <div><dt>Shield</dt><dd>15 Nepal-specific rules</dd></div>
+              <div><dt>Every claim</dt><dd>Linked to quote, page or timestamp</dd></div>
+              <div><dt>Speaks</dt><dd>Nepali + English</dd></div>
+            </dl>
+            <a class="u-link card__link" href="https://github.com/limitlessneverdies/rakshak" target="_blank" rel="noopener">See the repo ↗</a>
+          </div>
+          <div class="card__media card__media--verdict">
+            <div class="verdict">
+              <div class="verdict__head mono"><span>case #QA-1400</span><span>4 sources</span></div>
+              <div class="verdict__row"><span class="mono muted">voice note · 00:41</span><span>"QAR <b>1,400</b>, 8 hours, no fee"</span></div>
+              <div class="verdict__row"><span class="mono muted">contract · p.2</span><span>QAR <b class="x">900</b>, <b class="x">12</b> hours</span></div>
+              <div class="verdict__row"><span class="mono muted">receipt</span><span>Rs <b class="x">1,70,000</b> fee paid</span></div>
+              <div class="verdict__row"><span class="mono muted">visa</span><span><b class="x">Visit</b> visa, not labour</span></div>
+              <div class="verdict__stop"><span>STOP</span><span class="deva">रोक्नुहोस्</span></div>
+              <p class="verdict__call mono">→ don't sign. call the helpline first.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card card--ink" data-cursor="Alembic">
+        <div class="card__inner">
+          <div class="card__text">
+            <div class="card__top mono"><span>03</span><span class="tag">Reverse engineering · Rust</span></div>
+            <h3>Alembic, opened up</h3>
+            <p class="card__lede">I loved a chemistry game, so I took its engine apart.</p>
+            <p class="card__body">Alembic is a falling-sand sandbox where you play with the periodic table. Learning chemistry in it is amazing, but there was no way to add anything new. So I went through the shipped Rust binary piece by piece: every element, every reaction, the save format, the shaders. Then I wrote a spec so the game can load mods. Once you can add stuff, there's no ceiling on what it can teach.</p>
+            <dl class="card__facts">
+              <div><dt>Binary</dt><dd>6.7 MB rustc / macroquad</dd></div>
+              <div><dt>Strings pulled</dt><dd>119,871</dd></div>
+              <div><dt>Decoded</dt><dd>92 elements · 62 sim systems</dd></div>
+              <div><dt>Mapped</dt><dd>v6 save format, byte by byte</dd></div>
+            </dl>
+            <a class="u-link card__link" href="https://github.com/limitlessneverdies/alembic" target="_blank" rel="noopener">Read the teardown ↗</a>
+          </div>
+          <div class="card__media card__media--screen">
+            <img src="assets/alembic.webp" alt="Modded Alembic running at 60 fps: beakers of water and sand, molten metal in a crucible, a 141-substance palette and a chemistry log" width="1202" height="680" loading="lazy">
+          </div>
+        </div>
+      </article>
+
+      <article class="card card--acid" data-cursor="Lock in">
+        <div class="card__inner">
+          <div class="card__text">
+            <div class="card__top mono"><span>04</span><span class="tag">Windows · Electron → Rust + Tauri</span></div>
+            <h3>Focus Lock</h3>
+            <p class="card__lede">Willpower isn't a strategy. Friction is.</p>
+            <p class="card__body">You know the loop. Open the laptop to work, "just check" one tab, and suddenly three hours of YouTube are gone. So you sign a commitment, pick your days and pick your blocklist. After that, Alt+F4 doesn't work, Task Manager is gone, restarting just reopens it, and deleting it doesn't remove it. You chose this. Now you're stuck with it. The rebuild, MONOLITH, runs as a SYSTEM service, and the only way out early is a 5-stage cognitive test.</p>
+            <dl class="card__facts">
+              <div><dt>Survives</dt><dd>Restart · shutdown · uninstall</dd></div>
+              <div><dt>Blocks</dt><dd>Hosts file + app killer, every 2s</dd></div>
+              <div><dt>Swallows</dt><dd>Alt+F4 · Alt+Tab · Win · Ctrl+Shift+Esc</dd></div>
+              <div><dt>Early exit</dt><dd>Dual N-back → real problem → verify</dd></div>
+            </dl>
+            <div class="card__links"><a class="u-link card__link" href="https://github.com/limitlessneverdies/focus-lock" target="_blank" rel="noopener">focus-lock ↗</a><a class="u-link card__link" href="https://github.com/limitlessneverdies/monolith" target="_blank" rel="noopener">monolith ↗</a></div>
+          </div>
+          <div class="card__media card__media--lock">
+            <div class="lock">
+              <p class="mono lock__small">day 14 of 30 · signed by you</p>
+              <p class="lock__time mono" id="lockTime">47:12</p>
+              <p class="lock__quote">"You don't leave the session. The session leaves you."</p>
+              <button class="lock__esc mono" id="lockEsc" data-cursor="Good luck">try to escape →</button>
+              <p class="lock__nope mono" id="lockNope" aria-live="polite"></p>
+              <div class="lock__keys mono">
+                <span>Alt+F4</span><span>Alt+Tab</span><span>⊞ Win</span><span>Ctrl+Shift+Esc</span><span>youtube.com</span><span>instagram.com</span><span>x.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="tools">
+      <p class="label mono">also shipped</p>
+      <div class="tools__grid">
+        <a class="tool" href="https://github.com/limitlessneverdies/FocusTube" target="_blank" rel="noopener" data-cursor="Open">
+          <div class="tool__viz tool__viz--tube">
+            <div class="tube__timer mono">04:59 to pick</div>
+            <div class="tube__slots"><span class="on"></span><span class="on"></span><span class="on"></span><span></span><span></span></div>
+            <div class="tube__dead mono">/shorts → <s>gone</s></div>
+          </div>
+          <h4>FocusTube</h4>
+          <p>YouTube without the slot machine. Every morning you get 5 minutes to pick 5 videos, and that's all you can watch. Shorts are gone. Chrome extension + Android.</p>
+        </a>
+        <a class="tool" href="https://github.com/limitlessneverdies/pulseboard" target="_blank" rel="noopener" data-cursor="Open">
+          <div class="tool__viz tool__viz--pulse mono">
+            <div><span class="dim">06:00</span> MORNING BRIEFING</div>
+            <div><span class="o">HN</span> Show HN: a 4kb raytracer</div>
+            <div><span class="o">LO</span> why compilers are slow</div>
+            <div><span class="o">GH</span> trending ▲ 2.1k</div>
+            <div class="cur">_</div>
+          </div>
+          <h4>PulseBoard</h4>
+          <p>RSS, Hacker News, Lobsters and GitHub Trending in one keyboard-first dashboard, with a broadcast-style morning briefing. No dependencies, nothing leaves your machine.</p>
+        </a>
+        <a class="tool" href="https://github.com/limitlessneverdies/LIMITLESS" target="_blank" rel="noopener" data-cursor="Open">
+          <div class="tool__viz tool__viz--prep">
+            <div class="prep__ring"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="42"/><circle class="p" cx="50" cy="50" r="42"/></svg><span class="mono">day 23<br><b>/30</b></span></div>
+          </div>
+          <h4>LIMITLESS (prep)</h4>
+          <p>I built my own entrance-prep coach while studying for Mahanagar. It's every past paper and mock test I could find, plus Gemini reading the PDFs, built around getting you exam-ready in 30 days.</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lab dark" id="lab">
+  <div class="lab__stage">
+    <canvas id="labCanvas" data-cursor="Touch the arc"></canvas>
+    <div class="lab__overlay">
+      <p class="label mono">05 / the lab</p>
+      <h2 class="lab__title">Built at home.<br><span class="acid">Most of it bit me first.</span></h2>
+      <p class="lab__hint mono">bring your cursor near the coil</p>
+    </div>
+  </div>
+  <div class="wrap lab__below">
+    <div class="lab__photos">
+      <figure class="ph ph--tall reveal-media"><img src="assets/tesla.webp" alt="Homemade Tesla coil with copper winding, held in hand outdoors" width="275" height="420" loading="lazy"><figcaption class="mono">Tesla coil · hand-wound secondary</figcaption></figure>
+      <figure class="ph ph--wide reveal-media"><img src="assets/electro.webp" alt="Homemade electrostatic generator made from a soda can and plastic bottles" width="625" height="285" loading="lazy"><figcaption class="mono">Van de Graaff · a soda can, bottles and patience</figcaption></figure>
+    </div>
+
+    <div class="gates">
+      <div class="gates__text">
+        <p class="label mono">right now</p>
+        <h3>Logic gates from scratch.</h3>
+        <p>No ICs, just transistors on a breadboard, because "the computer just does it" was never a good enough answer for me. Flip the inputs:</p>
+      </div>
+      <div class="gates__board" id="gates">
+        <div class="gates__ins">
+          <button class="sw mono" data-in="a" aria-pressed="false">A <b>0</b></button>
+          <button class="sw mono" data-in="b" aria-pressed="false">B <b>0</b></button>
+        </div>
+        <svg class="gates__wire" viewBox="0 0 300 140" aria-hidden="true">
+          <path id="wa" class="w" d="M0 35 H110 C130 35 130 52 150 52"/>
+          <path id="wb" class="w" d="M0 105 H110 C130 105 130 88 150 88"/>
+          <path class="g" d="M150 30 H185 A40 40 0 0 1 185 110 H150 Z"/>
+          <text id="gname" x="178" y="75" text-anchor="middle">AND</text>
+          <path id="wo" class="w" d="M225 70 H300"/>
+        </svg>
+        <div class="led" id="led"><i></i><span class="mono">OUT <b>0</b></span></div>
+        <div class="gates__ops mono">
+          <button data-op="AND" class="on">AND</button><button data-op="OR">OR</button><button data-op="XOR">XOR</button><button data-op="NAND">NAND</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="casefile" id="casefile">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title">Case file</h2>
+      <p class="section-side reveal">The most fun I've had breaking something. I didn't publish the exploit.</p>
+    </div>
+    <div class="file reveal">
+      <div class="file__head mono"><span>PM-01 · responsible disclosure</span><span>status: <b class="ok">FIXED</b></span></div>
+      <div class="file__strike" aria-hidden="true"><span class="from">Rs 9,000</span><span class="arrow">→</span><span class="to">Rs 0</span></div>
+      <div class="file__grid">
+        <div><p class="mono muted">target</p><p>Padhai Mantra, one of Nepal's biggest education platforms</p></div>
+        <div><p class="mono muted">bug</p><p>Payment logic. A Rs 9,000 course could be unlocked for Rs 0.</p></div>
+        <div><p class="mono muted">what I did</p><p>Found it, wrote it up, and reported it privately. Then I worked with their team until it was fixed.</p></div>
+        <div><p class="mono muted">what I didn't</p><p>Use it, share it, or post a "how to" video about it.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="journey" id="journey">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title">Journey</h2>
+      <p class="section-side reveal">Robots, then circuits, then code. Mostly in that order.</p>
+    </div>
+    <ol class="timeline">
+      <li class="reveal"><span class="mono t">Class 6</span><div><h4>Hydraulic arm</h4><p>Syringes, tubes and cardboard. Totally dumb, and the start of everything.</p></div></li>
+      <li class="reveal"><span class="mono t">Class 9</span><div><h4>Walking, talking AI robot</h4><p>It walked, and it answered back. Sometimes in the right order.</p></div></li>
+      <li class="reveal"><span class="mono t">At home</span><div><h4>Tesla coil &amp; Van de Graaff</h4><p>High voltage, low budget. Physics I could feel on my arm hair.</p></div></li>
+      <li class="reveal"><span class="mono t">SEE</span><div><h4>3.90 GPA, then a scholarship</h4><p>Built my own prep app on the way. Class topper, though I care more about the why.</p></div></li>
+      <li class="reveal"><span class="mono t">Internship</span><div><h4>Quick Enterprises</h4><p>Software engineering intern. First time my code ran for people who weren't me.</p></div></li>
+      <li class="reveal"><span class="mono t">Class 11</span><div><h4>KMC Robotics Club</h4><p>Science stream at KMC. Logic gates from transistors on the side.</p></div></li>
+      <li class="reveal"><span class="mono t">Hackathons</span><div><h4>5+ entered, 1 won</h4><p>Latest: Prime College Hackathon. Rakshak was built under hackathon pressure.</p></div></li>
+      <li class="reveal now"><span class="mono t">Now</span><div><h4>NexPay</h4><p>Making money move without the internet. Co-building with Jitesh Prakash Chaudhary.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="contact dark" id="contact">
+  <div class="wrap">
+    <p class="label mono">06 / contact</p>
+    <h2 class="contact__big"><a href="mailto:limitlessneverdies369@gmail.com" data-cursor="Write">Got a problem that <span class="acid">shouldn't</span> be solvable?</a></h2>
+    <p class="contact__open mono"><span class="dot"></span>open to: internships · hackathon teams · hardware problems nobody wants</p>
+    <div class="contact__row">
+      <a class="pill pill--acid" href="mailto:limitlessneverdies369@gmail.com"><span class="roll"><span>limitlessneverdies369@gmail.com</span><span aria-hidden="true">limitlessneverdies369@gmail.com</span></span></a>
+      <a class="u-link" href="https://github.com/limitlessneverdies" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="u-link" href="https://www.linkedin.com/in/bishowdeep-bhusal-371308445/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </div>
+  <footer class="foot mono">
+    <span>© 2026 Bishowdeep Bhusal</span>
+    <span>Hand-coded. No templates, no builders. Type "limitless" anywhere.</span>
+    <span class="deva">सीमा छैन</span>
+  </footer>
+  <div class="giant" aria-hidden="true">LIMITLESS</div>
+</section>
+
+</main>
+
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="main.js"></script>
+<script type="module" src="lab.js"></script>
+</body>
+</html>
